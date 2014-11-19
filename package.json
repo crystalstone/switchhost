@@ -1,0 +1,28 @@
+{
+  "author": {
+    "name": "Shiying Wang"
+  },
+  "name": "shost",
+  "description": "change host",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/linkwisdom/epipe.git"
+  },
+  "main": "./index.js",
+  "keywords": [
+    "switchhost"
+  ],
+  "dependencies": {
+    
+  },
+  "bin": {
+    "epipe": "./bin/switchhost"
+  },
+  "scripts": {
+    "run": "node index.js"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
