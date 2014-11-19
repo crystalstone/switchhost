@@ -1,28 +1,25 @@
 {
-  "author": {
-    "name": "Shiying Wang"
+  "name": "switchhost",
+  "version": "1.0.1",
+  "description": "switchhost",
+  "main": "index.js",
+  "scripts": {
+    "test": "shost"
   },
-  "name": "shost",
-  "description": "change host",
-  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/linkwisdom/epipe.git"
+    "url": "git@github.com:crystalstone/switchhost.git"
   },
-  "main": "./index.js",
   "keywords": [
     "switchhost"
   ],
-  "dependencies": {
-    
-  },
   "bin": {
-    "epipe": "./bin/switchhost"
+    "shost": "./bin/switchhost"
   },
-  "scripts": {
-    "run": "node index.js"
+  "author": "wangshiying",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crystalstone/switchhost/issues"
   },
-  "engines": {
-    "node": "*"
-  }
+  "homepage": "https://github.com/crystalstone/switchhost"
 }
