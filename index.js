@@ -1,5 +1,5 @@
 /*
-方便的切换host文件v1.0
+方便的切换host文件v1.0.1
 目前只支持mac
 */
 
@@ -20,16 +20,20 @@ exports.main = function (argv) {
             name = argv[i + 1];
             content = argv[i + 2];
         } 
+        if (term == '-l') {
+            command = '-l';
+        } 
     }
-	// -c 改变host文件 
 	if (command == '-c') {
+		// -c 改变host文件 
 		changeHost.change(name);
-	}
-	// -a 增加host配置
-	if (command == '-a') {
+	} else if (command == '-a') {
+	    // -a 增加host配置
 		changeHost.add(name, content);
+	} else {
+		console.log('-c name: 更改host，name为名字；
+			-a name content: 增加名字为name 内容为content的host；
+			-l: 查看已经存在的host--好吧，待开发');
 	}
 
 };
-
-//exports.main(process.argv);
